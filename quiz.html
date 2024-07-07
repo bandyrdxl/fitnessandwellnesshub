@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Nature Quiz Game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+
+                font-family: cursive;
+                height: 100vh;
+                background-color: #161A30;
+        }
+        html {
+                height: auto;
+        }
+
+        .nav-links {
+                display: flex;
+                justify-content: center;
+                background-color: darkseagreen;
+                color: black;
+                font-family: cursive;
+        }
+
+        .sticky {
+                position: fixed;
+                top: -0;
+                width: 100%;
+        }
+
+        .links-index-nav {
+                margin: 20px;
+                padding-left: 50px;
+                color: black;
+                text-decoration: none;
+                font-weight: 700;
+        }
+
+        .links-index-nav:hover {
+                text-decoration: underline;
+                font-style: italic;
+                color: #D6FB41;
+        }
+        #quiz{
+
+          position: relative;
+          top: 13px;
+          left: -10px;
+          background-color: #161A30;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #quiz-content{
+          height: 600px;
+          background-color: #fff;
+          width: 1000px;
+          border-radius: 20px;
+          position: relative;
+        }
+
+        #quiz-content h1{
+          width: 40%;
+          padding-bottom: 30px;
+          padding-left: 35px;
+          font-size: 45px;
+          font-weight: 600;
+          position: absolute;
+          top: 5px;
+        }
+
+
+        #questions{
+          width: 97%;
+          position: absolute;
+          top: 120px;
+          padding-left: 25px;
+        }
+
+        #question{
+          font-family: "Gill Sans", sans-serif;
+        }
+
+        #quiz-answers{
+          position: absolute;
+          top: 200px;
+          left: 0px;
+          width: 95%;
+          padding: 25px;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #answer-buttons{
+          margin-right: 25px;
+          width: 80%;
+        }
+
+
+
+        .btn{
+          background: #fff;
+          color: #222;
+          font-weight: 500;
+          width: 100%;
+          padding: 10px;
+          margin: 10px 0;
+          text-align: left;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: 1s;
+        }
+
+        .btn:hover:not([disabled]){
+          background: #222;
+          color: #fff;
+        }
+
+        .btn:disabled{
+          cursor: no-drop;
+        }
+
+        #next-button{
+          position: absolute;
+          top: 470px;
+          width: 100%;
+          display:flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        #next-button button{
+          background: #001e4d;
+          color:#fff;
+          font-weight: 500;
+          width: 150px;
+          border: 0;
+          padding: 10px;
+          margin: 20px auto 0;
+          border-radius: 4px;
+          cursor: pointer;
+          display: none;
+        }
+
+        .correct{
+          background: #9aeabc;
+        }
+
+        .incorrect{
+          background: #ff9393;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">
+            <div class="logo">
+                <img src="logo.png" style="height: 100px;border-radius: 10px;margin-left:20px;">
+                <h1 class="logo-text">FITNESS AND WELLNESS HUB</h1>
+            </div>
+        </a>
+        <div class="hamburger-menu" onclick="toggleSidebar()">&#9776;</div>
+    </div>
+
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo"> </div>
+            <div class="close-btn" onclick="toggleSidebar()">&#10005;</div>
+        </div>
+        <script>
+            function toggleSidebar() {
+                var sidebar = document.getElementById("sidebar");
+                sidebar.classList.toggle("show-sidebar");
+            }
+        </script>
+        <ul>
+            <li><a href="index.html"><b>Home 🏠></b></a></li>
+            <li><a href="quiz.html"><b>Take Action✔️></b></a></li>
+            <li><a href="https://fitness-and-wellness-hub.printify.me/products"><b>Store 🏪></b></a></li>
+            <li><a href="contact us.html"><b>Contact Us 📞></b></a></li>
+        </ul>
+    </div>
+
+    <div id="quiz">
+          <div id="quiz-content">
+      <h1>Quiz</h1>
+
+      <div id="questions">
+        <h2 id="question">Question goes here</h2>
+      </div>
+
+      <div id="quiz-answers">
+        <div id="answer-buttons">
+          <button class="btn">Answer 1</button>
+          <button class="btn">Answer 2</button>
+          <button class="btn">Answer 3</button>
+          <button class="btn">Answer 4</button>
+
+        </div>
+      </div>
+      <div id="next-button">
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+    </div>
+
+    <script src="quiz.js"></script>
+
+</body>
+
+</html>

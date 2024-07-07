@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Fitness And Welness</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Noto+Sans+Arabic:wght@600&family=Poppins&display=swap"
+                rel="stylesheet">
+        <link rel="stylesheet"
+   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+        <style>
+                body {
+
+                        font-family: cursive;
+                        background-color: #4b9e37 ;
+
+                }
+
+                html {
+                        cursor: url("cursor.png"), auto !important;
+                        height: auto;
+                }
+
+                .navbar {
+                  background-color: #4b9e37;
+                  color: white;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  padding: 0px 30px;
+                  position: sticky;
+                  /* Add this */
+                  top: 0;
+                  /* Add this */
+                  z-index: 999;
+                  /* Add this */
+                }
+
+                .navbar a {
+                  text-decoration: none;
+                  color: white;
+                }
+
+          .card-wrap{
+                  display: flex;
+                  justify-content: space-evenly;
+          }
+                .card-wrap img{
+                        width:150px;
+                }
+                .card-1{
+                  width: 300px;
+                  height: 300px;
+                  color: white;
+                  background-color: #de830d;
+                  margin: 10px;
+                  padding: 10px;
+                  text-align: center;
+                  border: 3px solid black;
+                  border-radius: 10px;
+                }
+                .card-2{
+                  width: 300px;
+                  height: 450px;
+                  color: white;
+                  background-color: #de830d;
+                  margin: 10px;
+                  padding: 10px;
+                  text-align: center;
+                  border: 3px solid black;
+                  border-radius: 10px;
+                }
+        </style>
+<body>
+         <div class="navbar">
+            <a href="index.html">
+              <div class="logo">
+                <img src="logo.png" style="height: 100px;border-radius: 10px;margin-left:20px;">
+                <h1 class="logo-text">FITNESS AND WELLNESS HUB</h1>
+              </div>
+            </a>
+            <div class="hamburger-menu" onclick="toggleSidebar()">&#9776;</div>
+          </div>
+
+
+          <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+              <div class="logo"> </div>
+              <div class="close-btn" onclick="toggleSidebar()">&#10005;</div>
+            </div>
+                  <script>
+                      function toggleSidebar() {
+                        var sidebar = document.getElementById("sidebar");
+                        sidebar.classList.toggle("show-sidebar");
+                      }
+                    </script>
+            <ul>
+              <li><a href="index.html"><b>Home 🏠></b></a></li>
+              <li><a href="quiz.html"><b>Take Action✔️></b></a></li>
+              <li><a href="https://fitness-and-wellness-hub.printify.me/products"><b>Store 🏪></b></a></li>
+              <li><a href="contact us.html"><b>Contact Us 📞></b></a></li>
+            </ul>
+          </div>
+          <div class="card-wrap">
+              <div class="card-1">
+                <img src="contact.jpg" class="card-img">
+            <h1>Contact Us</h1>
+            <p>Email : bhargavvenkat00@gmail.com</p>
+            </div></a>
+            <h1><b>FITNESS AND WELLNESS HUB</b></h1>
+                <div class="card-2">
+                            <img src="bhargav.jpg" class="card-img">
+                        <h1>Bhargav</h1>
+                        <p>Developer. A 15 year old coding student. I am a Web, App and Game developer, Graphic designer, AI tools expert. Phone number:+91 8838310943</p>
+                </div></a>
+          
+</body>
+</html>  

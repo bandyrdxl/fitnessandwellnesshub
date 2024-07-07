@@ -1,0 +1,397 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation bar styles */
+.navbar {
+  background-color: #4b9e37;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 30px;
+  position: sticky;
+  /* Add this */
+  top: 0;
+  /* Add this */
+  z-index: 999;
+  /* Add this */
+}
+
+/* Logo styles */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.logo-text {
+  font-size: 20px;
+  margin-left: 10px;
+  font-family: "Oswald", sans-serif;
+}
+
+
+/* Hamburger menu icon styles */
+.hamburger-menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Sidebar styles */
+.sidebar {
+  position: fixed;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  /* changed background color to black */
+  color: white;
+  /* text color */
+  transition: top 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.close-btn {
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 70px;
+  font-family: "Oswald", sans-serif;
+
+}
+
+.targets {
+  color: black;
+  display: flex;
+  align-items: start;
+  padding: 10px;
+  width: 45%;
+  margin: 30px;
+}
+
+.targets h1 {
+  margin: 0px;
+  font-family: "Oswald", sans-serif;
+}
+
+.targets p {
+  margin: 0px;
+  font-size: 20px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.targets img {
+  margin: 10px;
+  border-radius: 6px;
+  filter: invert(100%);
+
+}
+
+.card-wrap {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.target-card-wrap {
+  color: white;
+}
+
+.target-card-wrap-c {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+.show-sidebar {
+  top: 0;
+  z-index: 10000;
+}
+
+#cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  height: 90vh;
+  align-items: center;
+  background-color: #4b9e37;
+}
+
+.hero-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: -20px;
+}
+
+.goal {
+  color: #013300;
+  font-family: "Oswald", sans-serif;
+  writing-mode: vertical-lr;
+  font-size: 80px;
+
+}
+
+.goalname {
+  font-family: "Oswald", sans-serif;
+  text-align: left;
+  margin-left: 40px;
+  font-size: 60px;
+  color: white;
+}
+
+.goal-3-num {
+  writing-mode: horizontal-tb;
+  font-size: 230px;
+}
+
+.hero-one h3 {
+  font-size: 20px;
+  color: white;
+  margin-top: -30px;
+  font-family: BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.hero-one button {
+  padding: 15px;
+  background-color: #4b9e37;
+  color: white;
+  margin-top: 30px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.hero-one button :hover {
+  padding: 15px;
+  background-color: #4b9e37;
+  color: white;
+  margin-top: 30px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+
+.hero-two {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+  align-items: center;
+  margin: 30px;
+  margin-top: 60px;
+}
+
+.hero-two-text {
+  max-width: 700px;
+  margin: 20px;
+  font-size: 18px;
+
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.hero-two-img {
+  max-width: 500px;
+}
+
+.hero-two-buttons {
+  display: flex;
+}
+
+.hero-two-buttons button {
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: white;
+  color: black;
+  margin-top: 30px;
+  border: 5px solid #4b9e37;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+
+}
+
+.to-the-top {
+  height: 45px;
+  width: 40px;
+  font-size: 15px;
+  color: white;
+  background-color: #4b9e37;
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  position: sticky;
+  bottom: 20px;
+  left: 20px;
+}
+
+.game-screen {
+  background-color: black;
+  width: 950px;
+  border-radius: 10px;
+}
+
+.titlebar {
+  width: 950px;
+  background-color: white;
+  height: 30px;
+  border-radius: 10px 10px 0px 0px;
+  border: 1px solid #b3b3b3;
+  display: flex;
+  align-items: center;
+}
+
+.game-buttons {
+  width: 15px;
+  height: 15px;
+  border-radius: 30px;
+  margin: 4px;
+}
+
+.red-button {
+  background-color: red;
+}
+
+.yellow-button {
+  background-color: #ffdd00;
+}
+
+.green-button {
+  background-color: green;
+}
+
+.take-a-break {
+  font-size: 50px;
+  font-family: "Oswald", sans-serif;
+}
+
+.take-a-break-p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: #f0f0f0;
+}
+
+#result {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.div-hero-wrap {
+  display: flex;
+  margin: 40px;
+  max-width: 1300px;
+}
+
+.div-hero-img {
+  margin: 10px;
+}
+
+.div-hero-text {
+  margin: 10px;
+  background-color: #0b0e37;
+  padding: 20px;
+  text-align: left;
+  height: 479px;
+}
+
+.div-hero-text p {
+  color: white;
+  font-size: 22px;
+}
+
+.div-hero-text input {
+  border: 4px solid white;
+  margin: 5px;
+  margin-top: 40px;
+  padding: 15px;
+  color: white;
+  font-size: 20px;
+  background-color: #0b0e37;
+}
+
+.div-hero-text button {
+  border: 4px solid white;
+  color: white;
+  margin-top: 20px;
+  padding: 15px;
+  font-size: 20px;
+  margin: 5px;
+  background-color: #0b0e37;
+}
